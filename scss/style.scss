@@ -1,0 +1,56 @@
+
+$primaryColor: #fff;
+$secondaryColor: #00abff;
+
+body {
+  font-family: Verdana;
+  font-size: 1.5em;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $secondaryColor;
+  color: #fff;
+
+  h1 {
+    color: $primaryColor;
+    display: block;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: -3px;
+  }
+
+
+  #team-members {
+
+    .member {
+      display: inline-block;
+      margin: 10px;
+      padding: 6px;
+
+      .img-holder {
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+
+        img {
+          position: absolute;
+          max-width: 95%;
+          max-height: 95%;
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.19);
+          border-radius: 100px;
+
+          &:hover {
+            transition: 800ms ease;
+            opacity: 0;
+          }
+        }
+      }
+
+      div.name {
+        text-align: center;
+      }
+    }
+  }
+}
